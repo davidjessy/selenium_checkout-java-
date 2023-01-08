@@ -26,7 +26,6 @@ public class Selenium_checkout {
 		String baseurl = "https://www.saucedemo.com";
 		driver.manage().window().maximize();
 		driver.get(baseurl);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 	}
 
@@ -49,16 +48,19 @@ public class Selenium_checkout {
 			e.printStackTrace();
 		}
 		login.click();
-		
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
 	@Test(priority = -2)
 	public void addProductToCart() {
 		// Item Add to Cart
-		WebElement AddToCart = driver.findElement(By.id("add-to-cart-sauce-labs-backpack"));
+		WebElement AddToCart = driver.findElement(By.xpath("//*[@id=\"add-to-cart-sauce-labs-bike-light\"]"));
 		AddToCart.click();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@Test(priority = -1)
@@ -66,9 +68,21 @@ public class Selenium_checkout {
 		// Add to Cart ICON
 		WebElement AddToCart2 = driver.findElement(By.xpath("/html/body/div[1]/div/div/div[1]/div[1]/div[3]/a"));
 		AddToCart2.click();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		// Checkout
 		WebElement checkoutbutton = driver.findElement(By.id("checkout"));
 		checkoutbutton.click();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		// Faker
 		Faker faker = new Faker();
 		String firstName = faker.name().firstName();
@@ -89,7 +103,12 @@ public class Selenium_checkout {
 		postalCode.click();
 		postalCode.clear();
 		postalCode.sendKeys(zipCode);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@Test(priority = 0)
