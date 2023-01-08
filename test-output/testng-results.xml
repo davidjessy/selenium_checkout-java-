@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-08T00:46:42 EST" name="Default suite" finished-at="2023-01-08T00:46:49 EST" duration-ms="7091">
+    <groups>
+    </groups>
+    <test started-at="2023-01-08T00:46:42 EST" name="Default test" finished-at="2023-01-08T00:46:49 EST" duration-ms="7091">
+      <class name="SwagLabs.Selenium_checkout">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:SwagLabs.Selenium_checkout@4e268090]" started-at="2023-01-08T00:46:42 EST" name="SetUp" finished-at="2023-01-08T00:46:44 EST" duration-ms="2329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="login()[pri:-3, instance:SwagLabs.Selenium_checkout@4e268090]" started-at="2023-01-08T00:46:44 EST" name="login" finished-at="2023-01-08T00:46:46 EST" duration-ms="1524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="addProductToCart()[pri:-2, instance:SwagLabs.Selenium_checkout@4e268090]" started-at="2023-01-08T00:46:46 EST" name="addProductToCart" finished-at="2023-01-08T00:46:46 EST" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductToCart -->
+        <test-method signature="checkoutAndContinue()[pri:-1, instance:SwagLabs.Selenium_checkout@4e268090]" started-at="2023-01-08T00:46:46 EST" name="checkoutAndContinue" finished-at="2023-01-08T00:46:46 EST" duration-ms="753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutAndContinue -->
+        <test-method signature="validateChekout()[pri:0, instance:SwagLabs.Selenium_checkout@4e268090]" started-at="2023-01-08T00:46:46 EST" name="validateChekout" finished-at="2023-01-08T00:46:48 EST" duration-ms="1194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateChekout -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:SwagLabs.Selenium_checkout@4e268090]" started-at="2023-01-08T00:46:48 EST" name="afterTest" finished-at="2023-01-08T00:46:49 EST" duration-ms="1175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- SwagLabs.Selenium_checkout -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
